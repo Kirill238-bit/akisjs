@@ -64,11 +64,11 @@ const Materials = () => {
 
       return (
         <div className='comp_wrap' onClick={()=>{ setModalOpen(false)}}>
-        <button className='button' onClick={(e)=>{ e.stopPropagation();setModalOpen(!modalOpen)}}>Добавить</button>
+              <button className='buttonU' onClick={(e)=>{ e.stopPropagation();setModalOpen(!modalOpen)}}>Добавить</button>
         <dialog open={modalOpen} onClick={(e)=> e.stopPropagation()}>
           <div className='modal_wrap'>
-          <input type="text" placeholder="Название "value={token} onChange={(e)=>setToken(e.target.value)}/>
-          <input type="text" placeholder="Кол-во "value={quantity} onChange={(e)=>setQuantity(e.target.value)}/>
+                      <input type="textY" placeholder="Название "value={token} onChange={(e)=>setToken(e.target.value)}/>
+                      <input type="textY" placeholder="Кол-во "value={quantity} onChange={(e)=>setQuantity(e.target.value)}/>
           <label className='lable' style={{display:'flex',gap:'12px',alignItems:'center'}}>
             Склад 
             <select value={warehouse} onChange={(e)=> setWarehouse(e.target.value)}>
@@ -89,7 +89,7 @@ const Materials = () => {
             <div>{item.name}</div>
             <div>{item.quantity}</div>
             <div>{item.warehouse.name}</div>
-            <button className='button-del' onClick={()=>{deleteMaterials(item.id,refresh)}}>Удалить</button>
+                  <button className='buttonU' onClick={()=>{deleteMaterials(item.id,refresh)}}>Удалить</button>
            </div> 
           ))}
         </div>
