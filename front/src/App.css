@@ -42,7 +42,7 @@ button{
   padding:12px;
 }
 .button-del{
-  color: white;
+  color: red;
   background-color: rgb(224, 64, 64);
 }
 
